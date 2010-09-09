@@ -1,0 +1,21 @@
+Request-log-analyzer summary report
+--------------------------------------------------------------------------------
+Version 1.8.1 - written by Willem van Bergen and Bart ten Brinke
+Website: http://github.com/wvanbergen/request-log-analyzer
+
+Request summary
+--------------------------------------------------------------------------------
+Parsed lines:        5764
+Skipped lines:       0   
+Parsed requests:     5764
+Skipped requests:    0   
+
+
+Request locales
+--------------------------------------------------------------------------------
+None found.
+
+Need an expert to analyze your application?
+Mail to contact@railsdoctors.com or visit us at http://railsdoctors.com.
+--------------------------------------------------------------------------------
+Thanks for using request-log-analyzer!
