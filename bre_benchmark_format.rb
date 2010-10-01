@@ -13,7 +13,7 @@ class BreBenchmarkFormat < RequestLogAnalyzer::FileFormat::Base
     line.regexp = /([\d\s\-\:]*)\,[\d\s\-]*\[.*\]\s+\[[\S@_\s\.]+((GET|POST)[\s\/a-zA-Z0-9]*)\].*au.com.aapt.awp.backend.bre.BrePerformanceBenchmark[\s+-]+\[(.*)\]\stook\s\[(.*)\]/
     line.header = true
     line.footer = true
-    line.captures << { :name => :timestamp, :type => :string } 
+    line.captures << { :name => :timestamp, :type => :timestamp } 
     line.captures << { :name => :path, :type => :string } 
     line.captures << { :name => :http_method, :type => :string } 
     line.captures << { :name => :method_id, :type => :string } 
