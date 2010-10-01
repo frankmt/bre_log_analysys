@@ -10,7 +10,7 @@ class BreBenchmarkFormat < RequestLogAnalyzer::FileFormat::Base
   # 2010-08-26 12:07:02,630 - 24243 [http-8080-4] [user_for_org@example.com GET /s/invoices/pod] INFO  au.com.aapt.awp.backend.bre.BrePerformanceBenchmark - [EnquireCustomer, {customerId=9001}] took [34] milliseconds
   
   line_definition :bre_benchmark_type do |line|
-    line.regexp = /([\d\s\-\:]*)\,[\d\s\-]*\[.*\]\s+\[[\S@_\s\.]+((GET|POST)[\s\/a-zA-Z0-9]*)\].*au.com.aapt.awp.backend.bre.BrePerformanceBenchmark[\s+-]+\[(.*)\]\stook\s\[(.*)\]/
+    line.regexp = /([\d\s\-\:]*)\,[\d\s\-]*\[.*\]\s+\[[\S@_\s\.]+((GET|POST)[\s\/a-zA-Z0-9]*)\].*au.com.aapt.awp.backend.bre.BrePerformanceBenchmark[\s+-]+\[([a-zA-Z]*),.*\]\stook\s\[(.*)\]/
     line.header = true
     line.footer = true
     line.captures << { :name => :timestamp, :type => :timestamp } 
